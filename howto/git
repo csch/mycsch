@@ -1,0 +1,21 @@
+// Remove top commit
+git reset --hard HEAD^
+
+// Delete remote
+git push origin --delete remote-branch
+
+// Add tag
+git tag 2.12-foo
+git push origin 2.12-foo
+
+// Rebase
+git rebase master
+git rebase -i master
+
+// log
+git log --graph --oneline
+
+// Find removed file in git history
+git log --all -- <path-to-file>
+
+
