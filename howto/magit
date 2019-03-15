@@ -1,0 +1,9 @@
+TAB	(un)collapse
+RET 	See details, Jump to file etc.
+M-p	Previous section
+M-n	Next section
+C-p	Previous line
+C-n	Next line
+q	Exit additional info buffer
+l	Show log options for commit
+u/s	(un)stage file/lines/line
