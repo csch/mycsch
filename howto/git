@@ -30,3 +30,5 @@ alias recent='git branch --sort=committerdate | tail -10'
 alias lasttag='git tag | sort -V | tail -5'
 alias mm='git checkout master && git pull origin master && git checkout - && git merge master
 
+// fix ref issues
+git gc --prune=now
