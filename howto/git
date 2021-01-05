@@ -18,4 +18,15 @@ git log --graph --oneline
 // Find removed file in git history
 git log --all -- <path-to-file>
 
+// aliases
+alias branch='git rev-parse --abrev-ref HEAD'
+alias show='git show HEAD'
+alias master='git checkout master && git fetch'
+alias mkbranch='master && git checkout -b'
+alias pushup='git push -u origin HEAD'
+alias clean='git reset --hard && git clean -f'
+alias logbranch='git log --oneline --first-parent `branch`'
+alias recent='git branch --sort=committerdate | tail -10'
+alias lasttag='git tag | sort -V | tail -5'
+alias mm='git checkout master && git pull origin master && git checkout - && git merge master
 
